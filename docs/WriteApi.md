@@ -1,10 +1,10 @@
-# QcWriteApi.WriteApiApi
+# QcWriteApi.WriteApi
 
 All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sendTransaction**](WriteApiApi.md#sendTransaction) | **POST** /transactions | Send Transaction
+[**sendTransaction**](WriteApi.md#sendTransaction) | **POST** /transactions | Send Transaction
 
 
 
@@ -19,7 +19,7 @@ Send Transaction
 ```javascript
 import QcWriteApi from 'qc_write_api';
 
-let apiInstance = new QcWriteApi.WriteApiApi();
+let apiInstance = new QcWriteApi.WriteApi();
 let opts = {
   'sendTransactionRequest': new QcWriteApi.SendTransactionRequest() // SendTransactionRequest | 
 };

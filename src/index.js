@@ -16,7 +16,7 @@ import ApiClient from './ApiClient';
 import ErrorResponseModel from './model/ErrorResponseModel';
 import SendTransactionRequest from './model/SendTransactionRequest';
 import TransactionSummaryResponse from './model/TransactionSummaryResponse';
-import WriteApiApi from './api/WriteApiApi';
+import WriteApi from './api/WriteApi';
 
 
 /**
@@ -76,8 +76,8 @@ export {
     TransactionSummaryResponse,
 
     /**
-    * The WriteApiApi service constructor.
-    * @property {module:api/WriteApiApi}
+    * The WriteApi service constructor.
+    * @property {module:api/WriteApi}
     */
-    WriteApiApi
+    WriteApi
 };
