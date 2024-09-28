@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new QcWriteApi.WriteApiApi();
+    instance = new QcWriteApi.WriteApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,7 +47,7 @@
       object[property] = value;
   }
 
-  describe('WriteApiApi', function() {
+  describe('WriteApi', function() {
     describe('sendTransaction', function() {
       it('should call sendTransaction successfully', function(done) {
         //uncomment below and update the code to test sendTransaction

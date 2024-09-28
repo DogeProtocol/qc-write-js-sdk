@@ -18,15 +18,15 @@ import SendTransactionRequest from '../model/SendTransactionRequest';
 import TransactionSummaryResponse from '../model/TransactionSummaryResponse';
 
 /**
-* WriteApi service.
-* @module api/WriteApiApi
+* Write service.
+* @module api/WriteApi
 * @version v1
 */
-export default class WriteApiApi {
+export default class WriteApi {
 
     /**
-    * Constructs a new WriteApiApi. 
-    * @alias module:api/WriteApiApi
+    * Constructs a new WriteApi. 
+    * @alias module:api/WriteApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instance} if unspecified.
@@ -38,7 +38,7 @@ export default class WriteApiApi {
 
     /**
      * Callback function to receive the result of the sendTransaction operation.
-     * @callback module:api/WriteApiApi~sendTransactionCallback
+     * @callback module:api/WriteApi~sendTransactionCallback
      * @param {String} error Error message, if any.
      * @param {module:model/TransactionSummaryResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -48,7 +48,7 @@ export default class WriteApiApi {
      * Send Transaction
      * @param {Object} opts Optional parameters
      * @param {module:model/SendTransactionRequest} [sendTransactionRequest] 
-     * @param {module:api/WriteApiApi~sendTransactionCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/WriteApi~sendTransactionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/TransactionSummaryResponse}
      */
     sendTransaction(opts, callback) {
